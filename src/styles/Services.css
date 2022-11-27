@@ -1,0 +1,130 @@
+:root {
+    --maroon: #510608;
+    --beige: #FFE184;
+    --yellow: #fbc620;;
+    --myblack: #111010;
+    --brown: #612f04c8;
+}
+
+.services{
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    background-image: url(../images/background2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+.services>h2{
+    color: var(--beige);
+    font-size: 30px;
+}
+
+.subService{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   width: 90%;
+   margin:auto;
+}
+
+.service-items{
+    background-color:var(--beige);
+    width: 90%;
+    height: 250px;
+    box-shadow: 10px 10px 8px 10px var(--brown);
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.service-items>h2{
+    font-size: 20px;
+    color: var(--myblack);
+    margin-top: 10px;
+}
+.service-items>p{
+    font-size: 15px;
+    color: var(--myblack);
+}
+
+@media screen and (max-width: 960px) {
+    .subService{
+        grid-template-columns: 1fr 1fr ;
+        width: 80%;
+        
+     }
+}
+
+@media screen and (max-width: 680px) {
+    .subService{
+        grid-template-columns: 1fr;
+        width: 90%;
+        
+     }
+}
+
+
+/* Pop up */
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    align-items: center;
+    margin-top: 100px;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #FFE184;
+    border-radius: 5px;
+    width: 50%;
+    height: 400px;
+    position: relative;
+    transition: all 5s ease-in-out;
+    box-shadow: 10px 10px 8px 10px var(--brown);
+  }
+  
+  .popup .close {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+  }
+  .popup .close:hover {
+    color: #510608;
+  }
+  .popup .content {
+    margin-top: 30px;
+    width: 100px;
+    height: 180px;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }

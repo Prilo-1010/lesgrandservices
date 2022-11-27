@@ -1,0 +1,126 @@
+.home {
+    background-image: url(../images/background4.jpg);
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subHero{
+    width: 70%;
+    display: flex;
+    margin: 0;
+ 
+  }
+  
+  .subHero1 {
+    width: 70%;
+  }
+  
+  .subHero1>h1 {
+    color: #FFE184;
+    font-size: 55px;
+    margin: 0px;
+  }
+  
+  .subHero1>h2 {
+    color: #FFE184;
+    font-size: 30px;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+
+  .subHero1>p {
+    color: #FFE184;
+    font-size: 25px;
+    padding-bottom: 20px;
+    margin: 0px;
+  }
+  .p{
+    color: #780a0d;
+    font-size: 25px;
+    padding-bottom: 20px;
+    margin: 0px;
+  }
+  
+  span{
+    color:#780a0d;
+    font-size: 50px;
+    font-weight: 700;
+  }
+  
+  @keyframes name-of-animation {
+    0%    { opacity: 0.3; }
+    25%   { opacity: 1; }
+    50%   { opacity: 0.4; }
+    50%   { opacity: 1; }
+    100%  { opacity: 0.3; }
+  }
+  
+.animate-this-element {
+    animation: name-of-animation 3s infinite;
+  }
+  
+  @media screen and (max-width:960px) {
+    
+  .subHero1>h1 {
+    font-size: 40px;
+  }
+  
+
+  .subHero1>p {
+    font-size: 20px;
+  }
+  .p{
+    font-size: 20px;
+  }
+  
+  span{
+    font-size: 45px;
+  }
+  }
+  
+  @media screen and (max-width:680px) {
+    .subHero1>h1 {
+      font-size: 35px;
+    }
+    
+    .subHero1>p {
+      font-size: 18px;
+    }
+    .p{
+      font-size: 20px;
+    }
+    
+    span{
+      font-size: 35px;
+    }
+    .btn-large{
+      padding: 8px 20px;
+    font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width:480px) {
+    .subHero1>h1 {
+      font-size: 30px;
+    }
+    
+    .subHero1>p {
+      font-size: 15px;
+    }
+    .p{
+      font-size: 18px;
+    }
+    
+    span{
+      font-size: 35px;
+    }
+  }
+

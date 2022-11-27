@@ -1,0 +1,83 @@
+.btn {
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    
+  }
+  
+  .btn-other {
+    text-decoration: none;
+    color: #FFE184;
+    background-color: transparent;
+    font-weight: 500;
+    border: 3px solid #FFE184;
+    transition: all 0.3s ease-out;
+    border-radius: 20%;
+  }
+  
+  .btn-other:hover,
+  .btn-other:focus {
+    transition: 250ms;
+    background-color: #FFE184;
+    border: 3px solid #FFE184;
+    color: #510608;
+    transform: translateY(-0.25em);
+  }
+  
+  .btn-primary {
+    text-decoration: none;
+    background-color: transparent;
+    color: #FFE184;
+    font-weight: 700;
+    border: 3px solid #FFE184;
+    transition: all 0.3s ease-out;
+  }
+  
+  .btn-primary:hover {
+    color: #FFE184;
+    transition: 250ms;
+    border: 3px solid #510608;
+    background-color: #510608;
+    opacity: 0.9;
+  }
+
+  .btn-view {
+    text-decoration: none;
+    background-color: transparent;
+    color: #510608;
+    font-weight: 700;
+    border: 3px solid #510608;
+    transition: all 0.3s ease-out;
+  }
+  
+  .btn-view:hover {
+    color: #FFE184;
+    transition: 250ms;
+    border: 3px solid #510608;
+    background-color: #510608;
+    opacity: 0.9;
+  }
+  
+  .btn-medium {
+    padding: 8px 20px;
+    font-size: 16px;
+  }
+  
+  .btn-large {
+    padding: 12px 26px;
+    font-size: 25px;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .btn-primary {
+  
+      margin-right: 0px;
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 var(--hover);
+    }
+  }

@@ -1,0 +1,175 @@
+/* About-Main */
+.about-main {
+  color: #FFE184;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: #2323236d;
+  height: auto;
+}
+
+.about1 {
+  padding: 20px;
+  display: flex;
+  border-bottom: 1px solid #780a0d;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.about-item {
+  width: 90%;
+  
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.about-main>h2,
+.about-item>h2 {
+  color: #FFE184;
+  font-size: 38px;
+
+}
+
+.about-item>p {
+  color: #FFE184;
+  font-size: 20px;
+
+}
+
+.about1 {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+}
+
+.process {
+  padding: 30px;
+  display: flex;
+  width: 70%;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.process-box>h3 {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.process-box>p {
+  font-size: 17px;
+  margin: 0;
+}
+
+.process-box {
+  padding: 20px;
+}
+
+@media screen and (max-width:1240px) {
+  .about1 {
+    width: 80%;
+  }
+
+  .about-item {
+    padding: 0px;
+  }
+
+  .process {
+    padding: 0px;
+  }
+
+  .process-box>h3 {
+    font-size: 22px;
+  }
+
+  .process-box>p {
+    font-size: 16px;
+  }
+
+  .about-main>h2,
+  .about-item>h2 {
+    font-size: 34px;
+  }
+
+  .about-item>p {
+    font-size: 20px;
+
+  }
+}
+
+@media screen and (max-width:960px) {
+  .process-box>h3 {
+    font-size: 20px;
+  }
+
+  .process-box>p {
+    font-size: 13px;
+  }
+
+  .about-main>h2,
+  .about-item>h2 {
+    font-size: 30px;
+  }
+
+  .about-item>p {
+    font-size: 17px;
+
+  }
+}
+
+@media screen and (max-width:780px) {
+  .process {
+    width: 90%;
+  }
+
+  .process-box>h3 {
+    font-size: 18px;
+  }
+
+  .about-main>h2,
+  .about-item>h2 {
+    font-size: 28px;
+  }
+
+  .about-item>p {
+    font-size: 15px;
+
+  }
+}
+
+@media screen and (max-width:520px) {
+  .process {
+    width: 100%;
+  }
+
+  .process-box>h3 {
+    font-size: 16px;
+  }
+
+  .about-main>h2,
+  .about-item>h2 {
+    font-size: 25px;
+  }
+
+  .about-item>p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .process {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .process-box {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
