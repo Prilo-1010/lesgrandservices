@@ -5,26 +5,29 @@ const useFetch = (url) => {
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(null)
 
-    useEffect(()=>{
-        const request = async () => {
-            const response = await fetch(url,{
-                headers: {
-                    'Content-Type': 'application/jsonp',
-                    'Accept': 'application/jsonp'
-                  }
-            });
-            const data = await response.json();
-            if(!response.ok){
-                throw Error('could not fetch the data..')
-            }
-            if(response.ok){
-                setData(data)
-                setLoading(false)
-                setError(null)
-               console.log(data);
-               console.log(url)
-            }
+    const request = async() => {
+        const response = await fetch(url,{
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+              }
+        });
+
+        const data = await response.json();
+        if(!response.ok){
+            throw Error('could not fetch the data..')
         }
+        if(response.ok){
+            setData(data)
+            setLoading(false)
+            setError(null)
+           console.log(data);
+           console.log(url)
+        }
+    }
+
+    useEffect(()=>{
+        
         request();
     }, [url])
 
