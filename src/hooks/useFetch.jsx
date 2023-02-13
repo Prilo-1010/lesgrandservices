@@ -1,19 +1,26 @@
-import { useState, useEffect} from 'react'
+import { useState, useEffect } from "react";
 
 const useFetch = (url) => {
-    const [data, setData] = useState(null)
-    const [loading, setLoading] = useState(true)
-    const [error, setError] = useState(null)
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
+
+  // Function to collect data
+  
+
+  useEffect(() => {
     const request = async() => {
         const response = await fetch(url,{
+            mode: "no-cors",
             headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
+                'Content-Type': 'application/jsonp',
+                'Accept': 'application/jsonp'
               }
         });
-
+  
         const data = await response.json();
+  
         if(!response.ok){
             throw Error('could not fetch the data..')
         }
@@ -25,13 +32,10 @@ const useFetch = (url) => {
            console.log(url)
         }
     }
+     request()
+  }, [url]);
 
-    useEffect(()=>{
-        
-        request();
-    }, [url])
+  return { data, loading, error };
+};
 
-    return {data, loading, error}
-}
- 
 export default useFetch;
