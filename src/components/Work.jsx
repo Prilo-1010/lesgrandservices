@@ -10,12 +10,12 @@ const Work = ({ portfolios }) => {
         <>
             {portfolios.map((portfolio) => (
                 <div key={portfolio.id} class="work-container" style={{ backgroundImage: `url(${pic})`, }}>
-                    <div class="overlay-work">
-                        <div class="items"></div>
-                        <div class="items header">
+                    <div className="overlay-work">
+                        <div className="items"></div>
+                        <div className="items header">
                             <p>{portfolio.title}</p>
                         </div>
-                        <div class="items header">
+                        <div className="items header">
                             <Link to={`/portfolio/${portfolio.id}`}>
                                 <Button
                                     buttonStyle='btn-other'
