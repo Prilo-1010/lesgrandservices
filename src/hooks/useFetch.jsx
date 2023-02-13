@@ -9,7 +9,7 @@ const useFetch = (url) => {
         const request = async () => {
             const response = await fetch(url,{
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/jsonp'
                   }
             });
             const data = await response.json();
