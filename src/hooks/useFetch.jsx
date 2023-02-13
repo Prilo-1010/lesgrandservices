@@ -7,9 +7,12 @@ const useFetch = (url) => {
 
     useEffect(()=>{
         const request = async () => {
-            const response = await fetch(url,{
+            const response = await fetch( url,{
+                method: "GET",
+                mode: "cors",
                 headers: {
-                    'Content-Type': 'application/jsonp'
+                    'Content-Type': 'application/jsonp',
+                    'Access-Control-Allow-Origin' : '*'
                   }
             });
             const data = await response.json();
