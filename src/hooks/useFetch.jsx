@@ -7,11 +7,11 @@ const useFetch = (url) => {
 
     useEffect(()=>{
         const request = async () => {
-            const response = await fetch( url,{
+            const response = await fetch( 'https://lgs-server.adaptable.app' + url,{
                 method: "GET",
                 mode: "cors",
                 headers: {
-                    'Content-Type': 'application/jsonp',
+                    'Content-Type': 'application/json',
                     'Access-Control-Allow-Origin' : '*'
                   }
             });

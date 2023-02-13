@@ -1,5 +1,4 @@
 {
-  "proxy": "https://lgs-server.adaptable.app/",
   "name": "le_grande_service",
   "version": "0.1.0",
   "private": true,
