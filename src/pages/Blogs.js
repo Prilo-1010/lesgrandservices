@@ -5,7 +5,7 @@ import useFetch from '../hooks/useFetch';
 import { useParams } from 'react-router-dom';
 
 export const Blogs = () => {
-    const { data: blogs, loading, error } = useFetch('/blogs');
+    const { data: blogs, loading, error } = useFetch('blogs');
 
     return (
         <>
