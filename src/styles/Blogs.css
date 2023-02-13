@@ -48,6 +48,16 @@
     padding: 8px;
   }
 
+   .btext{
+    margin-top: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #FFE184;
+    padding: 8px;
+  }
+
   .btext>h2{
     color: #FFE184;
     font-size: 30px;
@@ -58,11 +68,12 @@
      align-items: center;
      justify-content: center;
      margin: auto;
+     color: #b6b3b3;
   }
 
   .blog-card{
    display: flex;
-   background-color: #30302f;
+   background-color: #494949;
    border-radius: 5px;
    margin-bottom: 20px;
   }
@@ -75,7 +86,7 @@
     margin: auto;
     margin-top: 100px;
     width: 50%;
-  
+   color: #b6b3b3;
    }
 
   .blog-card:hover{
